@@ -103,6 +103,40 @@
 
 
 
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bikes-instance_method" title="#bikes (instance method)">#<strong>bikes</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute bikes.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
 
 
 
@@ -113,6 +147,54 @@
     </h2>
 
     <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dock_bike-instance_method" title="#dock_bike (instance method)">#<strong>dock_bike</strong>(bike)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>  &#x21d2; DockingStation </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of DockingStation.</p>
+</div></span>
+  
+</li>
+
       
         <li class="public ">
   <span class="summary_signature">
@@ -139,6 +221,99 @@
     </ul>
   
 
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="DockingStation (class)">DockingStation</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of DockingStation</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6
+7
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/docking_station.rb', line 6</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
+  <span class='ivar'>@bikes</span><span class='op'>=</span><span class='lbracket'>[</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="bikes-instance_method">
+  
+    #<strong>bikes</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute bikes</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+5
+6
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/docking_station.rb', line 5</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_bikes'>bikes</span>
+  <span class='ivar'>@bikes</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
 
 
   <div id="instance_method_details" class="method_details_list">
@@ -146,7 +321,37 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="release_bike-instance_method">
+  <h3 class="signature first" id="dock_bike-instance_method">
+  
+    #<strong>dock_bike</strong>(bike)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/docking_station.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dock_bike'>dock_bike</span><span class='lparen'>(</span><span class='id identifier rubyid_bike'>bike</span><span class='rparen'>)</span>
+  
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="release_bike-instance_method">
   
     #<strong>release_bike</strong>  &#x21d2; <tt>Object</tt> 
   
@@ -160,12 +365,12 @@
       <pre class="lines">
 
 
-6
-7
-8</pre>
+10
+11
+12</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/docking_station.rb', line 6</span>
+      <pre class="code"><span class="info file"># File 'lib/docking_station.rb', line 10</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_release_bike'>release_bike</span>
   <span class='id identifier rubyid_bike'>bike</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Bike.html" title="Bike (class)">Bike</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Bike.html#initialize-instance_method" title="Bike#initialize (method)">new</a></span></span>
@@ -180,7 +385,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Sep 27 15:49:28 2017 by
+  Generated on Wed Sep 27 16:52:44 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.4.1).
 </div>
