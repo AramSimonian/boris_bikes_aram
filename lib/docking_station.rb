@@ -1,5 +1,5 @@
 #require_relative "./bike"
-require File.dirname(__FILE__) + "/bike" 
+require File.dirname(__FILE__) + "/bike"
 
 class DockingStation
   attr_reader :bikes
@@ -12,7 +12,7 @@ class DockingStation
   end
 
   def dock_bike(bike)
-    
+    @bikes << bike
   end
 
 end
