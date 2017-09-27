@@ -1,4 +1,5 @@
-require_relative "./bike"
+#require_relative "./bike"
+require File.dirname(__FILE__) + "/bike" 
 
 class DockingStation
 
