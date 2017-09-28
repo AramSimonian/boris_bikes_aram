@@ -2,6 +2,16 @@ require "docking_station"
 
 describe DockingStation do
 
+  describe "#bikes" do
+    it 'responds to the method "bikes"' do
+      expect(subject).to respond_to :bikes
+    end
+
+    it 'when bikes is called, @bikes is returned' do
+      expect(subject.bikes).to eq('instance-variable')
+    end
+  end
+
   describe "#release_bike" do
     context "given the method 'release bike'"
       it 'responds to the method "release_bike"' do
