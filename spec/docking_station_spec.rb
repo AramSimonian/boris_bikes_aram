@@ -3,13 +3,20 @@ require "docking_station"
 describe DockingStation do
 
   describe "#bikes" do
-    it 'responds to the method "bikes"' do
-      expect(subject).to respond_to :bikes
+    it 'responds to the method "bike"' do
+      expect(subject).to respond_to :bike
     end
 
-    it 'when bikes is called, @bikes is returned' do
-      expect(subject.bikes).to eq('instance-variable')
+    it 'returns docked bikes' do
+      bike = Bike.new
+      subject.dock_bike(bike)
+      expect(subject.bike).to eq bike
     end
+
+    # it 'when bikes is called, @bikes is returned' do
+    #   bike = Bike.new
+    #   expect(subject.bikes).to eq bike
+    # end
   end
 
   describe "#release_bike" do
@@ -28,12 +35,12 @@ describe DockingStation do
     ds = DockingStation.new
     bike = Bike.new
 
-    it "receives a bike instance and docks it" do
-      expect(subject).to respond_to :dock_bike
-    end
-
     it "the dock_bike method should receive one argument" do
       expect(subject).to respond_to(:dock_bike).with(1).argument
+    end
+
+    it 'docks something' do
+      expect(ds.dock_bike(bike)).to eq bike
     end
 
 #    it "the dock_bike method should return the bikes array if successful" do
