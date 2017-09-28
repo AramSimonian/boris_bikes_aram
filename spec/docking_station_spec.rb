@@ -25,9 +25,9 @@ describe DockingStation do
         expect(subject).to respond_to :release_bike
       end
 
-    context "release_bike returns object of type Bike"
-      it 'returns object of type Bike' do
-        expect(subject.release_bike).to be_instance_of Bike
+      it 'fails if there is no bike to be released' do
+        ds = DockingStation.new
+        expect { ds.release_bike }.to raise_error
       end
   end
 
