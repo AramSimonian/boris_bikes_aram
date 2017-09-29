@@ -29,7 +29,7 @@ describe DockingStation do
 
     it 'fails if there is already a docked bike' do
       ds = DockingStation.new
-      20.times { ds.dock_bike(Bike.new) }
+      DockingStation::DEFAULT_CAPACITY.times { ds.dock_bike(Bike.new) }
       # ds.dock_bike(Bike.new)
       expect {ds.dock_bike(Bike.new)}.to raise_error "Docking station full"
     end
